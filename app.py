@@ -5,7 +5,7 @@ st.title("APLICACION PARA REGISTROS DE POZOS")
 st.sidebar.title("Menu")
 opciones_inicio= st.sidebar.radio("Seleccione una opcion",["Inicio","Datos", "Calculos"])
 
-archivo_las=lasio.read("archivos_las\LGAE-040.las")
+archivo_las=lasio.read("LGAE-040.las")
 df=archivo_las.df()
 st.write(df)
 
